@@ -54,8 +54,11 @@ filename = "chb01.edf"
 
 eeg_data, electrodes_names = read_edf(filename)
 
-filtered_eeg = butterworth_filter(eeg_signal = eeg_data, low_freq = 0.5, high_freq = 30, sampling_freq = 256, order = 8)
+filtered_eeg = butterworth_filter(eeg_signal = eeg_data, 
+                                  low_freq = 0.5, 
+                                  high_freq = 30, 
+                                  sampling_freq = 256, 
+                                  order = 8)
 
 ```
 
-## 
