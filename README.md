@@ -31,3 +31,14 @@ Los archivos EDF de pacientes que tienen ataques epilépticos se muestran en el 
 `
 python download_eeg_data.py
 `
+
+## Lectura de archivos EDF
+
+```python 
+import * from eeg_analysis
+
+filename = "chb01.edf"
+
+eeg_data, electrodes_names = read_edf(filename)
+
+```
