@@ -42,3 +42,20 @@ filename = "chb01.edf"
 eeg_data, electrodes_names = read_edf(filename)
 
 ```
+
+## Filtrado de señales EEG utilizando un filtro butterworth
+
+Es posible filtrar los datos utilizando un filtro pasabandas del tipo Butterworth de orden N. Para aplicarlo se puede utilizar la siguiente sintaxis
+
+```python 
+import * from eeg_analysis
+
+filename = "chb01.edf"
+
+eeg_data, electrodes_names = read_edf(filename)
+
+filtered_eeg = butterworth_filter(eeg_signal = eeg_data, low_freq = 0.5, high_freq = 30, sampling_freq = 256, order = 8)
+
+```
+
+## 
